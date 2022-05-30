@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\adair\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\adair\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+﻿@model CinemaWA.Models.Filme
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Cadastrar Filme</h4>
+<hr />
+<div class="row">
+    <div class="col-md-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FilmeNome" class="control-label"></label>
+                <input asp-for="FilmeNome" class="form-control" />
+                <span asp-validation-for="FilmeNome" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+     <div class="col-md-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <input asp-for="Tipo" class="form-control" />
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+     <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Elenco" class="control-label"></label>
+                <input asp-for="Elenco" class="form-control" />
+                <span asp-validation-for="Elenco" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1 mt-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1 mt-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <a class="btn btn-dark" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

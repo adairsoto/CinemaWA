@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CinemaWA.Models.Sessao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-muted">Sessões</h1>
+
+<p>
+    <a asp-action="Create">Cadastrar Sessão</a>
+</p>
+<table class="table bg-light">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SessaoNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SessaoInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Filme)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SessaoNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SessaoInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Filme.FilmeNome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SessaoId"><img src=~/edit.png></a> |
+                <a asp-action="Details" asp-route-id="@item.SessaoId"><img src=~/details.png></a> |
+                <a asp-action="Delete" asp-route-id="@item.SessaoId"><img src=~/delete.png></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

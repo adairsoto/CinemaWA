@@ -1,0 +1,80 @@
+﻿@model CinemaWA.Models.Sessao
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Cadastrar Sessão</h4>
+<hr />
+<div class="row">
+    <div class="col-md-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SessaoNome" class="control-label"></label>
+                <input asp-for="SessaoNome" class="form-control" />
+                <span asp-validation-for="SessaoNome" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SessaoInicio" class="control-label"></label>
+                <input asp-for="SessaoInicio" class="form-control" />
+                <span asp-validation-for="SessaoInicio" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Sessaoinfo" class="control-label"></label>
+                <input asp-for="Sessaoinfo" class="form-control" />
+                <span asp-validation-for="Sessaoinfo" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FilmeId" class="control-label"></label>
+                <select asp-for="FilmeId" class ="form-control" asp-items="ViewBag.FilmeId"></select>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SalaId" class="control-label"></label>
+                <select asp-for="SalaId" class ="form-control" asp-items="ViewBag.SalaId"></select>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1 mt-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1 mt-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <a class="btn btn-dark" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

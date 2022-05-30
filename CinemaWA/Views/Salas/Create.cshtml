@@ -1,0 +1,42 @@
+﻿@model CinemaWA.Models.Sala
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Cadastrar Sala</h4>
+<hr />
+<div class="row">
+    <div class="col-md-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SalaNome" class="control-label"></label>
+                <input asp-for="SalaNome" class="form-control" />
+                <span asp-validation-for="SalaNome" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1 mt-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1 mt-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <a class="btn btn-dark" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
