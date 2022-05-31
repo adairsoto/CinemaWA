@@ -9,39 +9,44 @@
 <p>
     <a asp-action="Create">Cadastrar Filme</a>
 </p>
-<table style="background-color:lightgray" class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FilmeNome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tipo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Elenco)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FilmeNome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Elenco)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.FilmeId"><img src=~/edit.png></a> |
-                <a asp-action="Details" asp-route-id="@item.FilmeId"><img src=~/details.png></a> |
-                <a asp-action="Delete" asp-route-id="@item.FilmeId"><img src=~/delete.png></a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container">
+
+    <input style="background-color:lightgray"  type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar filmes..">
+
+    <table id="myTable" style="background-color:lightgray" class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmeNome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Elenco)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FilmeNome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Elenco)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.FilmeId"><img src=~/edit.png></a> |
+                    <a asp-action="Details" asp-route-id="@item.FilmeId"><img src=~/details.png></a> |
+                    <a asp-action="Delete" asp-route-id="@item.FilmeId"><img src=~/delete.png></a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

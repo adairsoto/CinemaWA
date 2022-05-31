@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4gpwHYf2tbTCLUmWtND2VrgJw5TZL+FrCD7LXT4zUkw=",
+  "Hash": "V9AnRsuC4xvPnwUPgvxNIGdr+Pdsxmyp3CHlDG0CGWY=",
   "Source": "CinemaWA",
   "BasePath": "_content/CinemaWA",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\cinema.png"
+    },
+    {
+      "Identity": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\wwwroot\\css\\search.png",
+      "SourceId": "CinemaWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\wwwroot\\",
+      "BasePath": "_content/CinemaWA",
+      "RelativePath": "css/search.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\search.png"
     },
     {
       "Identity": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\wwwroot\\css\\site.css",
@@ -1205,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\movie_clip.png"
+    },
+    {
+      "Identity": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\wwwroot\\sonic.webp",
+      "SourceId": "CinemaWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\wwwroot\\",
+      "BasePath": "_content/CinemaWA",
+      "RelativePath": "sonic.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sonic.webp"
     },
     {
       "Identity": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\wwwroot\\the-northman.jpg",
