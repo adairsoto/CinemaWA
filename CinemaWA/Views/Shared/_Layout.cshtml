@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CinemaWA</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CinemaWA.styles.css" asp-append-version="true" />
 </head>
 <style>
     body {
@@ -16,31 +17,28 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand text-muted" asp-area="" asp-controller="Home" asp-action="Index">Cinema WebApp</a>
+            <div class="container-fluid">
+                <link rel="shortcut icon" href="~/cinema.png" type="image/png">
+                <a class="navbar-brand text-muted" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/movie_clip.png" ></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-muted page-scroll" asp-area="" asp-controller="Reservas" asp-action="">Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" asp-area="" asp-controller="Sessoes" asp-action="">Sessões</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" asp-area="" asp-controller="Salas" asp-action="">Salas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" asp-area="" asp-controller="Assentos" asp-action="">Assentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" asp-area="" asp-controller="Filmes" asp-action="">Filmes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" asp-area="" asp-controller="Clientes" asp-action="">Clientes</a>
+                         <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="nav-link text-muted page-scroll" asp-area="" asp-controller="Reservas" asp-action="">Reservas</a></li>
+                            <li><a class="nav-link text-muted" asp-area="" asp-controller="Sessoes" asp-action="">Sessões</a></li>
+                            <li><a class="nav-link text-muted" asp-area="" asp-controller="Filmes" asp-action="">Filmes</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="nav-link text-muted" asp-area="" asp-controller="Clientes" asp-action="">Clientes</a></li>
+                            <li><a class="nav-link text-muted" asp-area="" asp-controller="Assentos" asp-action="">Assentos</a></li>
+                            <li><a class="nav-link text-muted" asp-area="" asp-controller="Salas" asp-action="">Salas</a></li>
+                          </ul>
                         </li>
                     </ul>
                 </div>

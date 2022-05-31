@@ -8,9 +8,9 @@ namespace CinemaWA.Models
         [Display(Name = "Número do Assento")]
         public int NumeroAssento { get; set; }
         [Display(Name = "Informações")]
-        public string AssentoInfo { get; set; }
+        public string? AssentoInfo { get; set; }
         [Display(Name = "Sala")]
         public int SalaId { get; set; }
-        public Sala Sala { get; set; }
+        public Sala? Sala { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace CinemaWA.Controllers
         // GET: Assentos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Assento == null)
             {
                 return NotFound();
             }
@@ -72,7 +72,7 @@ namespace CinemaWA.Controllers
         // GET: Assentos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Assento == null)
             {
                 return NotFound();
             }
@@ -125,7 +125,7 @@ namespace CinemaWA.Controllers
         // GET: Assentos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Assento == null)
             {
                 return NotFound();
             }
@@ -146,15 +146,23 @@ namespace CinemaWA.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Assento == null)
+            {
+                return Problem("Entity set 'CinemaWAContext.Assento'  is null.");
+            }
             var assento = await _context.Assento.FindAsync(id);
-            _context.Assento.Remove(assento);
+            if (assento != null)
+            {
+                _context.Assento.Remove(assento);
+            }
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool AssentoExists(int id)
         {
-            return _context.Assento.Any(e => e.AssentoId == id);
+          return (_context.Assento?.Any(e => e.AssentoId == id)).GetValueOrDefault();
         }
     }
 }

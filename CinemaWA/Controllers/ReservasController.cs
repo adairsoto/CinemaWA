@@ -29,7 +29,7 @@ namespace CinemaWA.Controllers
         // GET: Reservas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Reserva == null)
             {
                 return NotFound();
             }
@@ -78,7 +78,7 @@ namespace CinemaWA.Controllers
         // GET: Reservas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Reserva == null)
             {
                 return NotFound();
             }
@@ -135,7 +135,7 @@ namespace CinemaWA.Controllers
         // GET: Reservas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Reserva == null)
             {
                 return NotFound();
             }
@@ -158,15 +158,23 @@ namespace CinemaWA.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Reserva == null)
+            {
+                return Problem("Entity set 'CinemaWAContext.Reserva'  is null.");
+            }
             var reserva = await _context.Reserva.FindAsync(id);
-            _context.Reserva.Remove(reserva);
+            if (reserva != null)
+            {
+                _context.Reserva.Remove(reserva);
+            }
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ReservaExists(int id)
         {
-            return _context.Reserva.Any(e => e.ReservaId == id);
+          return (_context.Reserva?.Any(e => e.ReservaId == id)).GetValueOrDefault();
         }
     }
 }

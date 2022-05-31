@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+#nullable disable
+
 namespace CinemaWA.Migrations
 {
     [DbContext(typeof(CinemaWAContext))]
@@ -15,16 +17,18 @@ namespace CinemaWA.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.17")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "6.0.5")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("CinemaWA.Models.Assento", b =>
                 {
                     b.Property<int>("AssentoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AssentoId"), 1L, 1);
 
                     b.Property<string>("AssentoInfo")
                         .HasColumnType("nvarchar(max)");
@@ -46,8 +50,9 @@ namespace CinemaWA.Migrations
                 {
                     b.Property<int>("ClienteId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClienteId"), 1L, 1);
 
                     b.Property<string>("CPF")
                         .HasColumnType("nvarchar(max)");
@@ -67,8 +72,9 @@ namespace CinemaWA.Migrations
                 {
                     b.Property<int>("FilmeId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FilmeId"), 1L, 1);
 
                     b.Property<string>("Elenco")
                         .HasColumnType("nvarchar(max)");
@@ -88,8 +94,9 @@ namespace CinemaWA.Migrations
                 {
                     b.Property<int>("ReservaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReservaId"), 1L, 1);
 
                     b.Property<int>("AssentoId")
                         .HasColumnType("int");
@@ -115,8 +122,9 @@ namespace CinemaWA.Migrations
                 {
                     b.Property<int>("SalaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SalaId"), 1L, 1);
 
                     b.Property<string>("SalaNome")
                         .HasColumnType("nvarchar(max)");
@@ -130,8 +138,9 @@ namespace CinemaWA.Migrations
                 {
                     b.Property<int>("SessaoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SessaoId"), 1L, 1);
 
                     b.Property<int>("FilmeId")
                         .HasColumnType("int");

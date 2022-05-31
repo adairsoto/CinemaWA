@@ -22,13 +22,15 @@ namespace CinemaWA.Controllers
         // GET: Filmes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Filme.ToListAsync());
+              return _context.Filme != null ? 
+                          View(await _context.Filme.ToListAsync()) :
+                          Problem("Entity set 'CinemaWAContext.Filme'  is null.");
         }
 
         // GET: Filmes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Filme == null)
             {
                 return NotFound();
             }
@@ -68,7 +70,7 @@ namespace CinemaWA.Controllers
         // GET: Filmes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Filme == null)
             {
                 return NotFound();
             }
@@ -119,7 +121,7 @@ namespace CinemaWA.Controllers
         // GET: Filmes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Filme == null)
             {
                 return NotFound();
             }
@@ -139,15 +141,23 @@ namespace CinemaWA.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Filme == null)
+            {
+                return Problem("Entity set 'CinemaWAContext.Filme'  is null.");
+            }
             var filme = await _context.Filme.FindAsync(id);
-            _context.Filme.Remove(filme);
+            if (filme != null)
+            {
+                _context.Filme.Remove(filme);
+            }
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool FilmeExists(int id)
         {
-            return _context.Filme.Any(e => e.FilmeId == id);
+          return (_context.Filme?.Any(e => e.FilmeId == id)).GetValueOrDefault();
         }
     }
 }

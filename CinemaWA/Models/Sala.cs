@@ -6,6 +6,6 @@ namespace CinemaWA.Models
     {
         public int SalaId { get; set; }
         [Display(Name = "Sala")]
-        public string SalaNome { get; set; }
+        public string? SalaNome { get; set; }
     }
 }

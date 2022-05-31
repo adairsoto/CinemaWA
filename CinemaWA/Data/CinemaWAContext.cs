@@ -14,16 +14,16 @@ namespace CinemaWA.Data
         {
         }
 
-        public DbSet<CinemaWA.Models.Reserva> Reserva { get; set; }
+        public DbSet<CinemaWA.Models.Assento>? Assento { get; set; }
 
-        public DbSet<CinemaWA.Models.Sessao> Sessao { get; set; }
+        public DbSet<CinemaWA.Models.Cliente>? Cliente { get; set; }
 
-        public DbSet<CinemaWA.Models.Sala> Sala { get; set; }
+        public DbSet<CinemaWA.Models.Filme>? Filme { get; set; }
 
-        public DbSet<CinemaWA.Models.Assento> Assento { get; set; }
+        public DbSet<CinemaWA.Models.Reserva>? Reserva { get; set; }
 
-        public DbSet<CinemaWA.Models.Filme> Filme { get; set; }
+        public DbSet<CinemaWA.Models.Sala>? Sala { get; set; }
 
-        public DbSet<CinemaWA.Models.Cliente> Cliente { get; set; }
+        public DbSet<CinemaWA.Models.Sessao>? Sessao { get; set; }
     }
 }

@@ -6,8 +6,8 @@ namespace CinemaWA.Models
     {
         public int ClienteId { get; set; }
         [Display(Name = "Cliente")]
-        public string ClienteNome { get; set; }
-        public string CPF { get; set; }
-        public string Email { get; set; }
+        public string? ClienteNome { get; set; }
+        public string? CPF { get; set; }
+        public string? Email { get; set; }
     }
 }

@@ -22,13 +22,15 @@ namespace CinemaWA.Controllers
         // GET: Clientes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cliente.ToListAsync());
+              return _context.Cliente != null ? 
+                          View(await _context.Cliente.ToListAsync()) :
+                          Problem("Entity set 'CinemaWAContext.Cliente'  is null.");
         }
 
         // GET: Clientes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Cliente == null)
             {
                 return NotFound();
             }
@@ -68,7 +70,7 @@ namespace CinemaWA.Controllers
         // GET: Clientes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Cliente == null)
             {
                 return NotFound();
             }
@@ -119,7 +121,7 @@ namespace CinemaWA.Controllers
         // GET: Clientes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Cliente == null)
             {
                 return NotFound();
             }
@@ -139,15 +141,23 @@ namespace CinemaWA.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Cliente == null)
+            {
+                return Problem("Entity set 'CinemaWAContext.Cliente'  is null.");
+            }
             var cliente = await _context.Cliente.FindAsync(id);
-            _context.Cliente.Remove(cliente);
+            if (cliente != null)
+            {
+                _context.Cliente.Remove(cliente);
+            }
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ClienteExists(int id)
         {
-            return _context.Cliente.Any(e => e.ClienteId == id);
+          return (_context.Cliente?.Any(e => e.ClienteId == id)).GetValueOrDefault();
         }
     }
 }

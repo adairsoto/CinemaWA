@@ -22,13 +22,15 @@ namespace CinemaWA.Controllers
         // GET: Salas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Sala.ToListAsync());
+              return _context.Sala != null ? 
+                          View(await _context.Sala.ToListAsync()) :
+                          Problem("Entity set 'CinemaWAContext.Sala'  is null.");
         }
 
         // GET: Salas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Sala == null)
             {
                 return NotFound();
             }
@@ -68,7 +70,7 @@ namespace CinemaWA.Controllers
         // GET: Salas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Sala == null)
             {
                 return NotFound();
             }
@@ -119,7 +121,7 @@ namespace CinemaWA.Controllers
         // GET: Salas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Sala == null)
             {
                 return NotFound();
             }
@@ -139,15 +141,23 @@ namespace CinemaWA.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Sala == null)
+            {
+                return Problem("Entity set 'CinemaWAContext.Sala'  is null.");
+            }
             var sala = await _context.Sala.FindAsync(id);
-            _context.Sala.Remove(sala);
+            if (sala != null)
+            {
+                _context.Sala.Remove(sala);
+            }
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SalaExists(int id)
         {
-            return _context.Sala.Any(e => e.SalaId == id);
+          return (_context.Sala?.Any(e => e.SalaId == id)).GetValueOrDefault();
         }
     }
 }

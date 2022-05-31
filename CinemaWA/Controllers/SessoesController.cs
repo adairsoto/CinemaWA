@@ -29,7 +29,7 @@ namespace CinemaWA.Controllers
         // GET: Sessoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Sessao == null)
             {
                 return NotFound();
             }
@@ -75,7 +75,7 @@ namespace CinemaWA.Controllers
         // GET: Sessoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Sessao == null)
             {
                 return NotFound();
             }
@@ -130,7 +130,7 @@ namespace CinemaWA.Controllers
         // GET: Sessoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Sessao == null)
             {
                 return NotFound();
             }
@@ -152,15 +152,23 @@ namespace CinemaWA.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Sessao == null)
+            {
+                return Problem("Entity set 'CinemaWAContext.Sessao'  is null.");
+            }
             var sessao = await _context.Sessao.FindAsync(id);
-            _context.Sessao.Remove(sessao);
+            if (sessao != null)
+            {
+                _context.Sessao.Remove(sessao);
+            }
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SessaoExists(int id)
         {
-            return _context.Sessao.Any(e => e.SessaoId == id);
+          return (_context.Sessao?.Any(e => e.SessaoId == id)).GetValueOrDefault();
         }
     }
 }
