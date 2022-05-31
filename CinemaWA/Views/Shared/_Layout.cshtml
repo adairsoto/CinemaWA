@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <link rel="shortcut icon" href="~/cinema.png" type="image/png">
-                <a class="navbar-brand text-muted" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/movie_clip.png" ></a>
+                <a class="navbar-brand asp-area=" asp-controller="Home" asp-action="Index"><img src="~/movie_clip.png" ></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,6 +40,7 @@
                             <li><a class="nav-link text-muted" asp-area="" asp-controller="Salas" asp-action="">Salas</a></li>
                           </ul>
                         </li>
+                        <li><a class="nav-link text-muted page-scroll" asp-area="" asp-controller="Reservas" asp-action="Create">Fazer Reserva</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\CinemaWA\\CinemaWA\\CinemaWA.csproj": {}
+    "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\CinemaWA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\CinemaWA\\CinemaWA\\CinemaWA.csproj": {
+    "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\CinemaWA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\CinemaWA\\CinemaWA\\CinemaWA.csproj",
+        "projectUniqueName": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\CinemaWA.csproj",
         "projectName": "CinemaWA",
-        "projectPath": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\CinemaWA\\CinemaWA\\CinemaWA.csproj",
+        "projectPath": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\CinemaWA.csproj",
         "packagesPath": "C:\\Users\\adair\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\CinemaWA\\CinemaWA\\obj\\",
+        "outputPath": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adair\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -4,33 +4,39 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
-
-<div>
-    <h4>Filme</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FilmeNome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FilmeNome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Elenco)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Elenco)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Tipo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Tipo)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.FilmeId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<body style="background-color:lightgray">
+    <div>
+        <h4>Detalhes do Filme</h4>
+        <hr />
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.FilmeNome)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.FilmeNome)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Elenco)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Elenco)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Tipo)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Tipo)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Sinopse)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Sinopse)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.FilmeId">Editar</a> |
+        <a class="btn btn-dark" asp-action="Index">Voltar</a>
+    </div>
+</body>

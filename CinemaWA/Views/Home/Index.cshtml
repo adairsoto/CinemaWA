@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<h1 class="text-muted">Filmes em Cartaz</h1>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -10,13 +11,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="~/the-northman.jpg" height="600" class="d-block w-100" alt="...">
+      <a class="nav-link" asp-area="" asp-controller="Filmes" asp-action=""><img src="~/the-northman.jpg" height="600" class="d-block w-100" alt="..."></a>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="~/Top-Gun-Maverick-1.webp" height="600" class="d-block w-100" alt="...">
+        <a class="nav-link" asp-area="" asp-controller="Filmes" asp-action=""><img src="~/Top-Gun-Maverick-1.webp" height="600" class="d-block w-100" alt="..."></a>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="~/morbius.jpg" height="600" class="d-block w-100" alt="...">
+        <a class="nav-link" asp-area="" asp-controller="Filmes" asp-action=""><img src="~/morbius.jpg" height="600" class="d-block w-100" alt="..."></a>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -8,157 +8,157 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CinemaWA
 build_property.RootNamespace = CinemaWA
-build_property.ProjectDir = C:\Users\adair\OneDrive\Desktop\castGroup\CinemaWA\CinemaWA\
+build_property.ProjectDir = C:\Users\adair\OneDrive\Desktop\castGroup\ASPNET\CinemaWA\CinemaWA\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\adair\OneDrive\Desktop\castGroup\CinemaWA\CinemaWA
+build_property.MSBuildProjectDirectory = C:\Users\adair\OneDrive\Desktop\castGroup\ASPNET\CinemaWA\CinemaWA
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Assentos/Create.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Assentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZW50b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Assentos/Delete.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Assentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZW50b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Assentos/Details.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Assentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZW50b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Assentos/Edit.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Assentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZW50b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Assentos/Index.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Assentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZW50b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Clientes/Create.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Clientes/Delete.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Clientes/Details.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Clientes/Edit.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Clientes/Index.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Filmes/Create.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Filmes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Filmes/Delete.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Filmes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Filmes/Details.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Filmes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Filmes/Edit.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Filmes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Filmes/Index.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Filmes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Home/Index.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Home/Privacy.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Reservas/Create.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Reservas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Reservas/Delete.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Reservas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Reservas/Details.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Reservas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Reservas/Edit.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Reservas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Reservas/Index.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Reservas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Salas/Create.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Salas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Salas/Delete.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Salas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Salas/Details.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Salas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Salas/Edit.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Salas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Salas/Index.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Salas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Sessoes/Create.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Sessoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Sessoes/Delete.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Sessoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Sessoes/Details.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Sessoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Sessoes/Edit.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Sessoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Sessoes/Index.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Sessoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Shared/Error.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/_ViewImports.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/_ViewStart.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adair/OneDrive/Desktop/castGroup/CinemaWA/CinemaWA/Views/Shared/_Layout.cshtml]
+[C:/Users/adair/OneDrive/Desktop/castGroup/ASPNET/CinemaWA/CinemaWA/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-p32h0pdmv9

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z2Sa8F3huFTVrhdePi5PUTcQcNOHv/IJq7HVJI9GYSTWJkdKYbvsNItyCnWvuc448tsT0tlTj+ei2hq69vPjpQ==",
+  "dgSpecHash": "mA6maaN8r45+oyqqi1Qu0mu520v6l9smL4z1j4HmLCBdWME0m/L6ASC/lB53ieGjUjbX0hgji2d0ndFRlSGM/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\CinemaWA\\CinemaWA\\CinemaWA.csproj",
+  "projectFilePath": "C:\\Users\\adair\\OneDrive\\Desktop\\castGroup\\ASPNET\\CinemaWA\\CinemaWA\\CinemaWA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adair\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\adair\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
